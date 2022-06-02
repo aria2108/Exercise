@@ -1,0 +1,14 @@
+#myClock {
+    border-radius: 50%;
+    border: 5px solid #2d95be;
+    background: #000000;
+    padding: 50px 10px 0px 10px; 
+    width: 100px;
+    height: 70px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+    

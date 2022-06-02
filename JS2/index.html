@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Java Script Exercise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    </head>    
+    <body>
+        
+        <script src="script.js"></script>
+        <!-- exercise 1 -->
+        <h2>Java Script Exercise</h2>
+        <br/>
+        <h3>Exercise 1 - Counter</h3>
+        <p id="counter">0</p>
+        <button onclick= "increase()">Increase</button>
+        <button onclick= "decrease()">Decrease</button>
+        <hr/>
+
+        <!-- exercise 2 -->
+        <h3>Exercise 2 - Toogle Button</h3>
+        <div id="content">
+            <h4>Hello</h4>
+            <p>Click the button to hide me :)</p>
+        </div>
+        <button id="toogleBtn" onclick= "showToogle()">Hide</button>
+        <hr/>
+
+        <!-- exercise 3 -->
+        <h3>Exercise 3.1 - Area of a Circle</h3>
+        <p>Type a value in the Radius field in meters to calculate the area of a circle :</p>
+        <p>
+            <label>Radius :</label>
+            <input id="inputRadius" type="number" placeholder="Radius in meters"
+            oninput="areaCircle(this.value)"
+            onchange="areaCircle(this.value)">
+             meters
+        </p>
+        <p>Area : <span id="outputSquareM"></span> m²</p>
+        <hr/>
+        
+        <!-- Advance - exercise 1 -->
+        <h3>Exercise 4.1 - Changing Color</h3>
+        <label for="favcolor">Select your favourite color:</label>
+        <input type="color" id="favColor" name="favcolor" value=#ffffff>
+        <br/>
+        <br/>
+        <button onclick="changeColor()">Change Color</button>
+        <br/>
+        <p id="myText">Click the button to change my color!</p>
+        <hr/>
+
+        <!-- JS-Advance part 2 - Exercise 3 (JS and HTML) -->
+        <h3>Exercise 3.2 - Dynamic List</h3>
+
+        <button  onclick="dynamicList()">Display List</button>
+        <!-- <button  onclick="hideList()">Hide List</button> -->
+        <p id="numlist"></p>
+        <hr/>
+        <h3>Exercise 4.2 - Dynamic List </h3>
+        <ul id="myUL">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <div id="myDiv">
+        <p>Input New List Element</p>
+        <input type="text" id="newInput" placeholder="New Element...">
+        <br/>
+        <br/>
+        <button onclick="newElement()">Add to List</button>
+        </div>
+        <hr>
+        <!-- JS-Advance part 3 - Exercise 5 (setInterval()) -->
+        <h3>Exercise 5 - Clock</h3>
+        <div id = "myClock">
+            <p></p>
+        </div>
+        <br>
+        <button onclick="myTime()">Toogle Clock</button>
+    </body>
+</html>
